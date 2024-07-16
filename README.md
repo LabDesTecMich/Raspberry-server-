@@ -13,7 +13,7 @@ Este respositorio cuenta con los pasos a seguir y comandos para instalar, crear 
 
 Empezaremos descargando la herramienta [Raspberry pi imager](https://www.raspberrypi.com/software/) en nuestro sistema
 
-![]()(instertar imagen).
+![](imagenes/RaspberrypiImager.JPG)
 
 posteriormente insertaremos la MicroSd en el adaptador Usb y la conectaremos a la computadora, continuaremos ejecutando el programa Raspberry pi imager, en el cual seleccionaremos el dispositivo que ocuparemos(para este caso sera la raspberry pi 4), el sistema operativo que le instalaremos (Raspberry pi OS (64bit)y la undad de almacenamiento en donde haremos la instalación(la undad que aparece la MicroSd que insertamos previamente).
 
