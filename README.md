@@ -27,9 +27,13 @@ Posteriormente insertaremos la Micro-Sd en el adaptador Usb y la conectaremos a 
 
 Al finalizar la instalación expulsaremos la Micro-Sd de nuestro pc y la retitaramos del adaptador para colocarla en la ranura de nuestra RaspBerry Pi 4, conectaremos el teclado y mouse a los puertos usb de la raspberry, asi como el cable de hdmi a la pantalla, conectaremos el cblae de la fuente de alimentación y la encenderemos.
 
+En el escritorio de inicio verificaremos que en la parte superior derecha nos encontremos conectados a la red que stablecimos en la configuracion, de no ser asi la buscaremos en las opciones e introduciremos la contraseña, una vez conectados a la red abriremos una terminal dano click en el simbolo del lado superior izquierdo o presionando la teclas Ctrl+alt+t.
+Dentro de la terminal empezaremos por acutalizar el sistema con los sguientes comandos:
 ```
 sudo apt upgrade
 
+```
+```
 sudo apt update
 
 ```
