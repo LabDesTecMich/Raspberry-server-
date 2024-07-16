@@ -1,7 +1,7 @@
 # Raspberry-server-
 Este respositorio cuenta con los pasos a seguir y comandos para instalar, crear y modificar los programas necesarios para montar un proyecto IoT con envio de datos a través de MQTT, utilizando Node-Red y MYSQL.
 
-## Matreiales necesarios:
+## Materiales necesarios:
 
 1. Raspberry Pi 4 modelo B 8Gb.
 
@@ -59,9 +59,27 @@ systemctl status mosquitto
 Para la instaación de Node-Red abriremos la terminal y utilizaremos los siguientes comandos:
 
 ```
-<(curl -SL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
 ```
-le daremos que si a las opciones con la letra "Y" para poder completar la instalación.
+ - le daremos que si a las opciones con la letra "Y" para poder completar la instalación. 
+
+Pedirá la confirmacion de la dirección donde se guardaran los archivos el cual será "home/(nombre de tu usuario)/.node-red/settngs.js"
+
+ - daremos la la opcion "no"
+ - daremos que "yes" a la opción "Doyou want to enable the Proyects feature?"
+ - manual.
+ - default. 
+ - moncao (default).
+ - "yes"  a "Allow Function nodes to load external modules (functionExternalModules)"
+
+Para inicar node-red introduciremos el comando 
+```
+node-red
+
+```
+desplegara una direccion ip a la cual le daremos click+ctrl para ingresar al programa.
+
+![](link de foto de node-red)
 
 
