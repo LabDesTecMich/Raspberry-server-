@@ -80,7 +80,7 @@ node-red
 ```
 desplegara una direccion ip a la cual le daremos click+ctrl para ingresar al programa.
 
-![](imagenes/inicio NodeRed.jpg)
+![](imagenes/NodeRed.jpg)
 
 ### Instalación de MariaDB para la base de datos MYSQL
 
