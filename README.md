@@ -80,6 +80,6 @@ node-red
 ```
 desplegara una direccion ip a la cual le daremos click+ctrl para ingresar al programa.
 
-![](link de foto de node-red)
+![](imagenes/pantalla inicial Node-red.jpeg)
 
 
