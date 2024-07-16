@@ -80,7 +80,7 @@ node-red
 ```
 desplegara una direccion ip a la cual le daremos click+ctrl para ingresar al programa.
 
-![](imagenes/NodeRed.jpg)
+![](imagenes/NodeRed.JPG)
 
 ### Instalación de MariaDB para la base de datos MYSQL
 
@@ -150,12 +150,19 @@ Entraremos a la base de datos:
 USE NOMBRE DE BASE DE DATOS;
 
 ```
-PARA CREAR UNA TABLA INTRODUCIREMOS LOS SIGUIENTES COMANDOS:
+Para crear una tabla usaremos los sigientes comandos como el soguiente ejemplo:
 
 ```
-CREATE TABLE NOMBRE_DE_TABLA (;
+CREATE TABLE NOMBRE_DE_TABLA (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP, nivel INT(3));
 
 ```
+Para visualizar las tablas creadas usaremos el comando:
+
+```
+SHOW TABLES;
+
+```
+
 
 
 
