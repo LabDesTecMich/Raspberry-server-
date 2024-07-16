@@ -1,7 +1,7 @@
 # Raspberry-server-
 Este respositorio cuenta con los pasos a seguir y comandos para instalar, crear y modificar los programas necesarios para montar un proyecto IoT con envio de datos a través de MQTT, utilizando Node-Red y MYSQL.
 
-##Matreiales necesarios:
+## Matreiales necesarios:
 
 1. Raspberry Pi 4 modelo B 8Gb.
 
@@ -37,6 +37,22 @@ sudo apt upgrade
 sudo apt update
 
 ```
+### Instalación de Broker MQTT
 
+Para La instalación de un broker MQTT utilizaremos los siguientes comandos:
+```
+sudo apt install mosquitto
+
+```
+```
+sudo apt install mosquitto-clients
+
+```
+
+Revisaremos que el programa esté corriendo adecuadamente con el comando: 
+```
+systemctl status mosquitto
+
+```
 
 
