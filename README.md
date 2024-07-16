@@ -59,7 +59,7 @@ systemctl status mosquitto
 Para la instaación de Node-Red abriremos la terminal y utilizaremos los siguientes comandos:
 
 ```
-<(curl -SL https://raw.githubusercontent.com/nose-red/linux-installers/master/deb/update-nodejs-and-nodered)
+<(curl -SL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
 ```
 le daremos que si a las opciones con la letra "Y" para poder completar la instalación.
