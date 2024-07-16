@@ -80,8 +80,82 @@ node-red
 ```
 desplegara una direccion ip a la cual le daremos click+ctrl para ingresar al programa.
 
-![]()
+![](imagenes/inicio NodeRed.jpg)
 
+### Instalación de MariaDB para la base de datos MYSQL
+
+Para la instalación de MariaDB introduciremos el siguiente comando:
+
+```
+sudo apt install mariadb-server -y
+
+```
+
+agregaremos la seguradad para la base de datos:
+
+```
+sudo mysql_secure_installation
+
+```
+te pedira introducir tu contraseña del root (la cual es la contraseña que le pusiste a la Raspberry) y seleccionaremos las siguientes opciones:
+- "n" para switch authenticacion.
+- "n" para cambio de contraseña.
+- "y" para remover usuarios anonimos
+- "y" para dissalow login remote.
+- "y" para remove test database.
+- "y" para regargar los privilegios de las tablas.
+
+En este momento quedaria terminada la instalación y configuracion del programa.
+
+Para ingresar por primera vez a MYSQL deberemos introducir el siguente comando:
+
+```
+sudo mysql -h localhost -u root -p
+
+```
+la opcion -h indica el nombre o la ip del servidor al cual nos vamos a conectar, la opción -u indica el usuario con el cual ingresaremos y la opcion -p indica que introduciremos una contraseña.
+
+nota: para cuando introduzcamos la contraseña no se motrará en pantalla pero si se escribirá.
+
+una vez dentro empezaremos por crear un ususario
+
+```
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'contraseña';
+
+```
+
+
+daepues daremos privilegios al usuario
+
+```
+GRANT ALL PRIVILEGES ON '*' TO 'usuario'@'localhost' WITH GRANT OPTION;
+
+```
+```
+FLUSH PRIVILEGES;
+
+```
+#### Creación de base de datos.
+
+Crearemos nuestra base de datos con los siguientes comandos:
+
+```
+CREATE DATABASE NOMBRE_BASE_DE_DATOS;
+
+```
+
+Entraremos a la base de datos:
+
+```
+USE NOMBRE DE BASE DE DATOS;
+
+```
+PARA CREAR UNA TABLA INTRODUCIREMOS LOS SIGUIENTES COMANDOS:
+
+```
+CREATE TABLE NOMBRE_DE_TABLA (;
+
+```
 
 
 
